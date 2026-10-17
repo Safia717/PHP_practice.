@@ -100,3 +100,23 @@ for ($i = 1; $i <= 5; $i++) {
 }
 
 ?>
+
+
+
+<?php
+
+function getCapital($country) {
+    $countries = [
+        "Somalia" => "Mogadishu",
+        "Kenya" => "Nairobi",
+        "Ethiopia" => "Addis Ababa",
+        "Uganda" => "Kampala",
+        "Tanzania" => "Dodoma",
+        "Egypt" => "Cairo"
+    ];
+
+    return $countries[$country] ?? "Country not found";
+}
+
+echo getCapital("Somalia");
+?>
